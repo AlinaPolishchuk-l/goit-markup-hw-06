@@ -34,9 +34,25 @@ img {
 /* common */
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /* #region header */
@@ -212,7 +228,86 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .benefits {
+  padding: 96px 16px;
+}
+
+.icon-container {
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 24px 100px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4fd;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.name-benefit {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  color: #2e2f42;
+  margin: 0 0 8px 0;
+}
+
+.text-benefit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .benefit-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .name-benefit {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .benefits {
+    padding: 120px 0;
+  }
+
+  .icon-container {
+    display: flex;
+  }
+
+  .benefit-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .name-benefit {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .text-benefit {
+    font-weight: 400;
+  }
+}
+
+/* .benefits {
   padding: 120px 0;
 }
 
@@ -246,14 +341,7 @@ img {
   color: #2e2f42;
   margin: 0 0 8px 0;
 }
-.text-benefit {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #434455;
-  letter-spacing: 0.02em;
-  margin: 0;
-}
+ */
 
 /* #endregion benefits */
 
@@ -574,7 +662,7 @@ img {
 
 /* #region modal window */
 
-.backdrop {
+/* .backdrop {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
@@ -805,6 +893,6 @@ img {
 .form-btn:hover,
 .form-btn:focus {
   background-color: #404bbf;
-}
+} */
 
 /* #endregion modal window */
