@@ -86,6 +86,7 @@ img {
 .burger-icon {
   display: block;
   fill: #2f2f37;
+  stroke: #2f2f37;
 }
 
 .contacts-list {
