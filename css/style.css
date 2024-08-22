@@ -422,55 +422,51 @@ img {
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 .footer-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   color: #f4f4fd;
-  width: 264px;
-  margin: 0;
+  letter-spacing: 0.02em;
+  width: 100%;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 117%;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 16px;
 }
 .footer-logo-studio {
   color: #f4f4fd;
 }
-.footer-links {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: #fff;
-}
+
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 .logo-container {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
 .footer-links-container {
-  margin-right: 80px;
+  margin: 0 auto 72px;
 }
 
 .footer-links {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  text-align: center;
   margin: 0 0 16px 0;
 }
 
@@ -499,16 +495,19 @@ img {
 
 .form-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  gap: 16px;
 }
 .text-form-foter {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #fff;
   margin: 0 0 16px 0;
 }
@@ -522,13 +521,14 @@ img {
   border: 1px solid #fff;
   border-radius: 4px;
   color: #fff;
-  width: 264px;
+  width: 288px;
   height: 40px;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  opacity: 0.6;
+  outline: none;
 }
 
 .email-input::placeholder {
@@ -810,6 +810,8 @@ img {
   .container {
     max-width: 768px;
   }
+
+  /* benefits */
   .benefits-list {
     gap: 24px;
   }
@@ -817,6 +819,35 @@ img {
     width: calc((100% - 24px) / 2);
   }
   .name-benefit {
+    text-align: left;
+  }
+  /* footer */
+  .footer-logo {
+    display: inline-block;
+  }
+  .footer-container {
+    padding: 0 92px;
+  }
+  .footer-text {
+    width: 264px;
+  }
+  .logo-container {
+    margin-right: 24px;
+  }
+  .footer-links-container {
+    margin: 0;
+  }
+
+  .form-footer {
+    gap: 24px;
+  }
+  .email-input {
+    width: 264px;
+  }
+  .footer-links {
+    text-align: left;
+  }
+  .text-form-foter {
     text-align: left;
   }
 }
@@ -852,5 +883,15 @@ img {
   }
   .text-benefit {
     font-weight: 400;
+  }
+  /* footer */
+  .footer {
+    padding: 100px 0;
+  }
+  .logo-container {
+    margin-right: 120px;
+  }
+  .footer-links-container {
+    margin-right: 80px;
   }
 }
