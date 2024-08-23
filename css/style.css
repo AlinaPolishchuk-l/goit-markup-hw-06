@@ -107,26 +107,25 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
-  max-width: 1440px;
+  padding: 72px 0;
   margin: 0 auto;
 }
 
 .name-container {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 107%;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
+  max-width: 216px;
   margin: 0 auto 0 auto;
   padding-bottom: 48px;
 }
 .button {
-  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   min-width: 169px;
@@ -823,6 +822,15 @@ img {
   .contacts:focus {
     color: #404bbf;
   }
+  /* hero */
+  .section-one {
+    padding: 112px 0;
+  }
+  .name-container {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
 
   /* benefits */
   .benefits-list {
@@ -900,6 +908,11 @@ img {
   .contacts {
     padding: 24px 0;
     font-size: 16px;
+  }
+  /* hero */
+  .section-one {
+    padding: 188px 0;
+    max-width: 1440px;
   }
 
   /* benefits */
