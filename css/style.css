@@ -208,12 +208,12 @@ img {
 
 .team-container {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .section-name {
   font-weight: 700;
   font-size: 36px;
-  line-height: 111%;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
@@ -224,14 +224,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  gap: 72px;
 }
 .team-list-image {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  width: calc((100% - 72px) / 4);
 }
 .team-card {
   margin: 0;
@@ -241,7 +241,7 @@ img {
 .team-names {
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   color: #2e2f42;
   letter-spacing: 0.02em;
   margin: 0 0 8px 0;
@@ -250,7 +250,7 @@ img {
 .team-position {
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   color: #434455;
   text-align: center;
   margin: 0 0 8px 0;
@@ -849,6 +849,14 @@ img {
   .name-benefit {
     text-align: left;
   }
+  /* team */
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  /* portfolio */
+
   /* footer */
   .footer-logo {
     display: inline-block;
@@ -928,6 +936,18 @@ img {
   .text-benefit {
     font-weight: 400;
   }
+  /* team */
+  .team-container {
+    padding: 120px 0;
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-list-image {
+    width: calc((100% - 72px) / 4);
+  }
+  /* portfolio */
+
   /* footer */
   .footer {
     padding: 100px 0;
