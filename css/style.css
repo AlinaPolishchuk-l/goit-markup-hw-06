@@ -288,14 +288,13 @@ img {
 /* #region portfolio */
 
 .portfolio {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .section-name {
   margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
-  column-gap: 24px;
   row-gap: 48px;
   flex-direction: row;
   justify-content: space-between;
@@ -306,7 +305,7 @@ img {
 .portfolio-item {
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin: 0 0 8px 0;
@@ -332,31 +331,17 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover .overlay {
-  transform: translateY(0%);
-  bottom: 0px;
-}
-
 .portfolio-list-item {
-  box-shadow: none;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-list-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  cursor: pointer;
 }
 
 .portfolio-item-class {
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   color: #434455;
   margin: 0;
-  width: calc((100% - 48px) / 3);
 }
 .portfolio-block {
   margin: 0;
@@ -857,6 +842,14 @@ img {
 
   /* portfolio */
 
+  .portfolio-list {
+    row-gap: 72px;
+  }
+
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
   /* footer */
   .footer-logo {
     display: inline-block;
@@ -947,6 +940,29 @@ img {
     width: calc((100% - 72px) / 4);
   }
   /* portfolio */
+  .portfolio {
+    padding: 120px 0;
+  }
+  .portfolio-list {
+    row-gap: 48px;
+  }
+
+  .portfolio-list-item {
+    box-shadow: none;
+    width: calc((100% - 48px) / 3);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-list-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    cursor: pointer;
+  }
+  .portfolio-list-item:hover .overlay {
+    transform: translateY(0%);
+    bottom: 0px;
+  }
 
   /* footer */
   .footer {
