@@ -883,7 +883,7 @@ button {
 
   /* benefits */
   .benefits-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
   .benefit-item {
     width: calc((100% - 24px) / 2);
@@ -907,9 +907,7 @@ button {
   .footer-logo {
     display: inline-block;
   }
-  .footer-container {
-    padding: 0 92px;
-  }
+
   .footer-text {
     width: 264px;
   }
@@ -1082,6 +1080,7 @@ button {
   }
   .logo-container {
     margin-right: 120px;
+    margin-bottom: 0;
   }
   .footer-links-container {
     margin-right: 80px;
@@ -1132,5 +1131,8 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .portfolio-list {
     row-gap: 72px;
+  }
+  .footer-container {
+    width: 584px;
   }
 }
