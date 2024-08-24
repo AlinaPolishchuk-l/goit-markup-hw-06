@@ -95,6 +95,84 @@ img {
 
 /* #endregion header */
 
+/* #region menu */
+.mob-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  padding-top: 72px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mob-menu.is-open {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+.menu-close-btn {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.mob-menu-link:focus {
+  color: #4d5ae5;
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.contacts-menu-block {
+  margin-bottom: 48px;
+}
+.contacts-menu {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-style: normal;
+}
+
+.contacts-menu:focus {
+  color: #4d5ae5;
+}
+.contacts-list-item-menu {
+  margin-bottom: 24px;
+}
+
+.menu-contacts > .team-social-links {
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 0;
+}
+
+/* #endregion menu */
+
 /* #region hero */
 .section-one {
   background-color: #2e2f42;
